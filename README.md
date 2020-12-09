@@ -1,8 +1,8 @@
-# Are We Web Yet
+# Are We Embedded Yet
 
-[This project](https://github.com/bashyHQ/arewewebyet) tries to give the answer to the question, "is the [Rust](http://rust-lang.org) ecosystem ready for web development yet?" This document gives an overview on the structure of the data, the technologies used and how you can contribute to the project. If you want to see the output of the project, please go to
+[This project](https://github.com/niclashoyer/areweembeddedyet) tries to give the answer to the question, "is the [Rust](http://rust-lang.org) ecosystem ready for embedded development yet?" This document gives an overview on the structure of the data, the technologies used and how you can contribute to the project. If you want to see the output of the project, please go to
 
-**[arewewebyet.org](http://www.arewewebyet.org/)**
+**[niclashoyer.github.io](https://niclashoyer.github.io/areweembeddedyet)**
 
 ## Contributing
 
@@ -14,8 +14,8 @@ Topics are located in the `context/topics` directory. Every topic contains an ar
 [extra]
 
 packages = [
-  "actix-web",
-  "rocket"
+  "embedded-hal",
+  "embedded-hal-linux"
 ]
 +++
 ```
@@ -31,8 +31,8 @@ This project is managed under an adapted [Contributor Convenant](http://contribu
 
 ## License
 
-![](https://img.shields.io/github/license/bashyHQ/arewewebyet.svg?style=flat-square)
+![](https://img.shields.io/github/license/niclashoyer/areweembeddedyet.svg?style=flat-square)
 
 The project and all its work is published under the Creative Commons Attribution 4.0 International License. To learn more about the conditions of that License, please refer to the [LICENSE](LICENSE) document in this folder.
 
-The original work this project is largely inspired by, was done and published by [Chris Morgan](https://github.com/chris-morgan) under the Creative Commons Attribution License (his link suggests, version 3.0).
+This project is largely a fork of [`arewewebyet`](https://github.com/rust-lang/arewewebyet) which is also CC-BY-4.0.

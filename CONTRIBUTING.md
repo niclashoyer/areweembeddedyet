@@ -18,13 +18,13 @@ TOML frontmatter, from which the HTML is generated:
 
 ```
 +++
-title = "Web Frameworks"
+title = "HAL Abstractions"
 
 [extra]
 
 packages = [
-  "actix-web",
-  "rocket"
+  "embedded-hal",
+  "embedded-hal-linux"
 ]
 +++
 ```
@@ -82,7 +82,7 @@ mature the curators believe this topic to be in rust (0 being the most mature an
 
 ```
 +++
-title = "Templating"
+title = "Panic"
 
 [extra]
 
@@ -94,32 +94,32 @@ level = 0
 
 Some topics do not have a `packages` array. These topics contain content after the frontmatter (after the second `+++`)
 Anything after the second `+++` is then rendered after the title in the top of the page, before the packages are listed.
-For example, the database topic is seperated into `drivers`, and `orms`:
+For example, the boards topic is seperated into several vendor sub topics like `adafruit`, and `stm`:
 ```
 +++
 [extra]
 
-drivers = [
-  "mysql",
-  "postgres"
+adafruit = [
+  "metro_m0",
+  "metro_m4"
 ]
 
-orms = [
-  "diesel",
-  "rustorm"
+stm = [
+  "stm32f407g-disc",
+  "stm32f429i-disc"
 ]
 +++
 ```
 
 These sub-topics are then rendered at the bottom of the page:
 ```html
-<h2 id="drivers">Drivers</h2>
+<h2 id="arduino">Arduino</h2>
 
-{{ packages(packages='drivers') }}
+{{ packages(packages='arduino') }}
 
-<h2 id="orms">ORMs</h2>
+<h2 id="stm">STMicroelectronics</h2>
 
-{{ packages(packages='orms') }}
+{{ packages(packages='stm') }}
 ```
 
 For more information about templating, see the `templating` below.
@@ -177,12 +177,13 @@ In markdown, you can use the `packages` shortcode and pass in the name of the to
 +++
 [extra]
 
-queries = [
-  "datafusion"
+adafruit = [
+  "metro_m0",
+  "metro_m4"
 ]
 +++
 
-{{ packages(packages='queries') }}
+{{ packages(packages='adafruit') }}
 ```
 
 ## Becoming a curator

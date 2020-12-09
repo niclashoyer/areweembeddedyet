@@ -7,9 +7,9 @@
   <link rel=stylesheet href={{ get_url(path="styles.css") }}>
   <link rel=stylesheet href={{ get_url(path="gh-fork-ribbon.css") }}>
   <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
-  <title>{% if page.title %}{{page.title}} » AWWY?{% else %}Are we web yet? Yes, and it's freaking fast! {% endif %}</title>
+  <title>{% if page.title %}{{page.title}} » AWEY?{% else %}Are we embedded yet? No, but we're getting there! {% endif %}</title>
   <meta name="description"
-    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+    content="AreWeEmbeddedYet gives insight on whether you can build your latest embedded project on top of Rust" />
 
   <link rel="icon" href="{{ get_url(path="favicon.ico") }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -21,7 +21,7 @@
   <meta property="og:image" content={{ get_url(path="screenshot.png") }} />
 
   <!-- Open Graph extra -->
-  <meta property="og:site_name" content="Are We Web Yet?" />
+  <meta property="og:site_name" content="Are We Embedded Yet?" />
 </head>
 
 <body>
@@ -57,13 +57,13 @@
             <a href="/about/">About</a>
           </li>
           <li>
-            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+            <a href="{{ config.extra.github_repo }}/#contributing">Contribute</a>
           </li>
         </ul>
       </div>
     </div>
     <p class="last-updated">
-      Last updated {{ get_env(name="CURRENT_TIME") }} - <a href="https://github.com/rust-net-web/arewewebyet/#license">CC-BY-4.0</a>
+      Last updated {{ get_env(name="CURRENT_TIME") }} - <a href="{{ config.extra.github_repo }}/#license">CC-BY-4.0</a>
     </p>
   </footer>
 </body>

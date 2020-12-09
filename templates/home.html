@@ -5,85 +5,14 @@
 
 <div class="github-fork-ribbon-wrapper left">
   <div class="github-fork-ribbon">
-    <a href="https://github.com/rust-lang/arewewebyet">Contribute on GitHub</a>
+    <a href="{{ config.extra.github_repo }}">Contribute on GitHub</a>
   </div>
 </div>
 
 <article class="article article--banner-spacing">
-  <h1>Are we <em>web</em> yet?</h1>
+  <h1>Are we <em>embedded</em> yet?</h1>
 
-  <p class="tagline"><strong>Yes! And it's freaking fast!</strong></p>
-
-  <h2>Can I replace my Rails/Django/Flask already?</h2>
-
-  <p>
-    <strong>Yup!</strong>
-    Rust has mature and production ready frameworks in <a href="/topics/frameworks/#pkg-actix-web">Actix Web</a> and
-    <a href="/topics/frameworks/#pkg-rocket">Rocket</a>, and newer ones like <a href="/topics/frameworks/#pkg-warp">Warp</a>
-    and <a href="/topics/frameworks/#pkg-tide">Tide</a>. These provide everything you’d expect from a web framework, from routing
-    and middleware, to templating, and JSON/form handling. There are crates for everything, and more! For databases, there’s:</p>
-
-  <ul>
-    <li>
-      <a href="/topics/database/#pkg-diesel">Diesel</a>, a full-fledged ORM.
-    </li>
-    <li>
-      <a href="/topics/database/#pkg-sqlx">sqlx</a>, the async sql toolkit.
-    </li>
-    <li>
-      As well as native drivers for <a href="/topics/database/#pkg-mongodb">MongoDB</a>, <a
-        href="/topics/database/#pkg-rusqlite">SQlite</a>, <a href="/topics/database/#pkg-postgres">Postgres</a>, and <a
-        href="/topics/database/#pkg-mysql">MySQL</a>.
-    </li>
-  </ul>
-
-  {% set services = get_page(path="topics/services.md") %}
-  There are many integrations to third-party services {{ level::level(level=services.extra.level) }}, such as:
-
-  <ul>
-    <li>
-      <a href="/topics/web-apis/#pkg-rusoto_core">Rusoto</a> (AWS)
-    </li>
-    <li>
-      <a href="/topics/web-apis/#pkg-azure_sdk_for_rust">Azure</a>
-    </li>
-    <li>
-      <a href="/topics/services/#pkg-redis">Redis</a>
-    </li>
-    <li>
-      <a href="/topics/services/#pkg-elasticsearch">Elasticsearch</a>
-    </li>
-  </ul>
-
-  {% set logging = get_page(path="topics/logging.md") %}
-  {% set auth = get_page(path="topics/auth.md") %}
-  {% set templating = get_page(path="topics/templating.md") %}
-  {% set email = get_page(path="topics/email.md") %}
-
-  <p>And of course, there is plenty of support for basic web needs, like <a href="/topics/logging/">logging</a>
-    {{ level::level(level=logging.extra.level) }}, <a href="/topics/auth/">authorization</a> {{ level::level(level=auth.extra.level) }}, <a
-      href="/topics/templating/">templating</a> {{ level::level(level=templating.extra.level) }}, and <a href="/topics/email/">email</a>
-    {{ level::level(level=email.extra.level) }}.</p>
-
-  <p>
-  While development might not be as smooth as something like Rails or Django, the Rust web development ecosystem and
-  community is engaged and very helpful. A lot of work has been put into the web in the past few years, and we're getting
-  there!
-  </p>
-
-  {% set webassembly = get_page(path="topics/webassembly.md") %}
-
-  <h2>WebAssembly???</h2>
-
-  <p>Rust can even run on the browser, by compiling to <a href="/topics/webassembly/">WebAssembly</a>
-    {{ level::level(level=webassembly.extra.level) }}. This means that you can take advantage of the amazing Rust ecosystem on the browser! Rust and
-    WebAssembly integrate with existing Javascript tooling. It supports NPM, Webpack, and ECMAScript modules! There are
-    some <a href="/topics/webassembly/">awesome Rust and WebAssembly</a> projects out there. For example, <a
-      href="https://github.com/yewstack/yew">Yew</a> and <a href="https://github.com/seed-rs/seed">Seed</a> let you create
-    front-end web apps with Rust in a way that feels almost like React.js.</p>
-
-  <p>For more information about Rust and WebAssembly, check out the <a
-      href="https://rustwasm.github.io/docs/book/introduction.html">Rust and WebAssembly Book</a>.</p>
+  <p class="tagline"><strong>No, but we're getting there!</strong></p>
 
   <h2>Getting started</h2>
 
