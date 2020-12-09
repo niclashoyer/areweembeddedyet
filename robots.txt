@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.arewewebyet.org/sitemap.xml
+Sitemap: https://niclashoyer.github.io/areweembeddedyet/sitemap.xml

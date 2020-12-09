@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=stylesheet href=https:&#x2F;&#x2F;niclashoyer.github.io&#x2F;areweembeddedyet&#x2F;styles.css>
+  <link rel=stylesheet href=https:&#x2F;&#x2F;niclashoyer.github.io&#x2F;areweembeddedyet&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>HAL Implementation » AWEY?</title>
+  <meta name="description"
+    content="AreWeEmbeddedYet gives insight on whether you can build your latest embedded project on top of Rust" />
+
+  <link rel="icon" href="https:&#x2F;&#x2F;niclashoyer.github.io&#x2F;areweembeddedyet&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=https:&#x2F;&#x2F;niclashoyer.github.io&#x2F;areweembeddedyet&#x2F;screenshot.png />
+  <meta name="twitter:image" content=https:&#x2F;&#x2F;niclashoyer.github.io&#x2F;areweembeddedyet&#x2F;screenshot.png />
+  <meta property="og:image" content=https:&#x2F;&#x2F;niclashoyer.github.io&#x2F;areweembeddedyet&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Embedded Yet?" />
+</head>
+
+<body>
+
+  <main role="content" class="content">
+    <img src="/rust.png" alt="" class="rust-logo">
+    
+<article class="article">
+
+  <h1>HAL Implementation 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span>
+</h1>
+
+  
+  <p>Implementations of embedded-hal for microcontroller families and systems running some OS.</p>
+<p><em>NOTE</em> You may be able to find even more HAL implementation crates by searching for
+the <a href="https://crates.io/keywords/embedded-hal-impl"><code>embedded-hal-impl</code></a> and 
+<a href="https://crates.io/keywords/embedded-hal">embedded-hal</a> keywords on crates.io!</p>
+
+  
+
+  <h2 id="os">OS <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-bitbang-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-02-18, last updated: 2020-06-03">bitbang-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/bitbang-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sajattack&#x2F;bitbang-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-bitbang-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/bitbang-hal.svg" />
+    <img src="https://img.shields.io/crates/d/bitbang-hal.svg" />
+    <img src="https://img.shields.io/crates/l/bitbang-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/sajattack&#x2F;bitbang-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Implements embedded-hal traits by bitbanging
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-linux-embedded-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-01-17, last updated: 2020-11-29">linux-embedded-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/linux-embedded-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;rust-embedded&#x2F;linux-embedded-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-linux-embedded-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/linux-embedded-hal.svg" />
+    <img src="https://img.shields.io/crates/d/linux-embedded-hal.svg" />
+    <img src="https://img.shields.io/crates/l/linux-embedded-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/rust-embedded&#x2F;linux-embedded-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Implementation of the `embedded-hal` traits for Linux devices
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="microchip">Microchip <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-atsamd-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-03-03, last updated: 2020-11-25">atsamd-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/atsamd-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;crate&#x2F;atsamd-hal&#x2F;"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;atsamd-rs&#x2F;atsamd"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-atsamd-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/atsamd-hal.svg" />
+    <img src="https://img.shields.io/crates/d/atsamd-hal.svg" />
+    <img src="https://img.shields.io/crates/l/atsamd-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/atsamd-rs&#x2F;atsamd.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL and Peripheral access API for ATSAMD11, ATSAMD21, ATSAMD51, ATSAME51, ATSAME53 and ATSAME54 microcontrollers
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="nordic">Nordic <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-nrf51-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-02-24, last updated: 2020-11-23">nrf51-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/nrf51-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;nrf-rs&#x2F;nrf-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-nrf51-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/nrf51-hal.svg" />
+    <img src="https://img.shields.io/crates/d/nrf51-hal.svg" />
+    <img src="https://img.shields.io/crates/l/nrf51-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/nrf-rs&#x2F;nrf-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for nRF51 microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-nrf52810-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-02-22, last updated: 2020-11-23">nrf52810-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/nrf52810-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;nrf-rs&#x2F;nrf-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-nrf52810-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/nrf52810-hal.svg" />
+    <img src="https://img.shields.io/crates/d/nrf52810-hal.svg" />
+    <img src="https://img.shields.io/crates/l/nrf52810-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/nrf-rs&#x2F;nrf-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for nRF52810 microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-nrf52832-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-11-10, last updated: 2020-11-23">nrf52832-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/nrf52832-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;nrf-rs&#x2F;nrf-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-nrf52832-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/nrf52832-hal.svg" />
+    <img src="https://img.shields.io/crates/d/nrf52832-hal.svg" />
+    <img src="https://img.shields.io/crates/l/nrf52832-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/nrf-rs&#x2F;nrf-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for nRF52832 microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-nrf52840-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-11-10, last updated: 2020-11-23">nrf52840-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/nrf52840-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;nrf-rs&#x2F;nrf-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-nrf52840-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/nrf52840-hal.svg" />
+    <img src="https://img.shields.io/crates/d/nrf52840-hal.svg" />
+    <img src="https://img.shields.io/crates/l/nrf52840-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/nrf-rs&#x2F;nrf-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for nRF52840 microcontrollers
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="nordic">NXP <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+Also check the list of <a href="/topics/boards/#nxp">NXP board support crates</a>!
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-lpc55s6x-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-08-17, last updated: 2019-11-09">lpc55s6x-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/lpc55s6x-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;lpc55s6x-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;nickray&#x2F;lpc55s6x-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-lpc55s6x-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/lpc55s6x-hal.svg" />
+    <img src="https://img.shields.io/crates/d/lpc55s6x-hal.svg" />
+    <img src="https://img.shields.io/crates/l/lpc55s6x-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/nickray&#x2F;lpc55s6x-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware Abstraction Layer (HAL) for the NXP LPC55S6x ARM Cortex-33 microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-lpc8xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-10-12, last updated: 2020-09-21">lpc8xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/lpc8xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;lpc8xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;lpc-rs&#x2F;lpc8xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-lpc8xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/lpc8xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/lpc8xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/lpc8xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/lpc-rs&#x2F;lpc8xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware Abstraction Layer (HAL) for the NXP LPC800 series of ARM Cortex-M0+ microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-mkw41z-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-03-20, last updated: 2018-05-10">mkw41z-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/mkw41z-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;mkw41z-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;therealprof&#x2F;mkw41z-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-mkw41z-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/mkw41z-hal.svg" />
+    <img src="https://img.shields.io/crates/d/mkw41z-hal.svg" />
+    <img src="https://img.shields.io/crates/l/mkw41z-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/therealprof&#x2F;mkw41z-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for MKW41Z microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-imxrt-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2020-02-17, last updated: 2020-11-23">imxrt-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/imxrt-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;imxrt-rs&#x2F;imxrt-rs"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-imxrt-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/imxrt-hal.svg" />
+    <img src="https://img.shields.io/crates/d/imxrt-hal.svg" />
+    <img src="https://img.shields.io/crates/l/imxrt-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/imxrt-rs&#x2F;imxrt-rs.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware abstraction layer for all NXP i.MX RT microcontrollers
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="sifive">SiFive <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-e310x-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-08-12, last updated: 2020-11-01">e310x-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/e310x-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;riscv-rust&#x2F;e310x-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-e310x-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/e310x-hal.svg" />
+    <img src="https://img.shields.io/crates/d/e310x-hal.svg" />
+    <img src="https://img.shields.io/crates/l/e310x-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/riscv-rust&#x2F;e310x-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for the E310x family of microcontrollers.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="stm">STMicroelectronics <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+Also check the list of <a href="/topics/boards/#stm">STMicroelectronics board support crates</a>!
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-stm32f0xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-12-06, last updated: 2020-08-30">stm32f0xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32f0xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;crate&#x2F;stm32f0xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32f0xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32f0xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32f0xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32f0xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32f0xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32f0xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for STM32F0 series microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32f1xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-12-17, last updated: 2020-10-17">stm32f1xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32f1xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32f1xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32f1xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32f1xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32f1xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32f1xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32f1xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32f1xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for the STM32F1xx family of microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32f3xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-04-01, last updated: 2020-07-21">stm32f3xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32f3xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32f3xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32f3xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32f3xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32f3xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32f3xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32f3xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32f3xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for STM32F3 series microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32f4xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-10-01, last updated: 2020-06-11">stm32f4xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32f4xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32f4xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32f4xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32f4xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32f4xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32f4xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32f4xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32f4xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for STM32F4 series microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32f7xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-11-05, last updated: 2020-07-01">stm32f7xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32f7xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32f7xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32f7xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32f7xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32f7xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32f7xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32f7xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32f7xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for the STM32F7xx family of microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32f7xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-11-05, last updated: 2020-07-01">stm32f7xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32f7xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32f7xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32f7xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32f7xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32f7xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32f7xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32f7xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32f7xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for the STM32F7xx family of microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32h7xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-05-26, last updated: 2020-10-26">stm32h7xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32h7xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32h7xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32h7xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32h7xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32h7xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32h7xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32h7xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32h7xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware Abstraction Layer implementation for STM32H7 series microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32l0xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-04-29, last updated: 2020-05-03">stm32l0xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32l0xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;crate&#x2F;stm32l0xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32l0xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32l0xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32l0xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32l0xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32l0xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32l0xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for STM32L0 series microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32l1xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-12-09, last updated: 2019-11-13">stm32l1xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32l1xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;stm32l1xx-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stm32-rs&#x2F;stm32l1xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32l1xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32l1xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32l1xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32l1xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/stm32-rs&#x2F;stm32l1xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for STM32L1 series microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32l151-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-02-20, last updated: 2018-10-08">stm32l151-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32l151-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;ah-&#x2F;stm32l151-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32l151-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32l151-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32l151-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32l151-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/ah-&#x2F;stm32l151-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for STM32L151 microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-stm32l4xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-11-22, last updated: 2019-09-02">stm32l4xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/stm32l4xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;MabezDev&#x2F;stm32l4xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-stm32l4xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/stm32l4xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/stm32l4xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/stm32l4xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/MabezDev&#x2F;stm32l4xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware abstraction layer for the stm32l4xx chips
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="ti">Texas Instruments <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-tm4c123x-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-05-06, last updated: 2020-08-26">tm4c123x-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tm4c123x-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;rust-embedded-community&#x2F;tm4c-hal&#x2F;tm4c123x-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-tm4c123x-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tm4c123x-hal.svg" />
+    <img src="https://img.shields.io/crates/d/tm4c123x-hal.svg" />
+    <img src="https://img.shields.io/crates/l/tm4c123x-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/rust-embedded-community&#x2F;tm4c-hal&#x2F;tm4c123x-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for the TM4C123x family of microcontrollers
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="msp">MSP430 <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-msp430fr2x5x-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-12-09, last updated: 2020-03-27">msp430fr2x5x-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/msp430fr2x5x-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;msp430fr2x5x-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;YuhanLiin&#x2F;msp430fr2x5x-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-msp430fr2x5x-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/msp430fr2x5x-hal.svg" />
+    <img src="https://img.shields.io/crates/d/msp430fr2x5x-hal.svg" />
+    <img src="https://img.shields.io/crates/l/msp430fr2x5x-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/YuhanLiin&#x2F;msp430fr2x5x-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Implementation of embedded-hal for microcontrollers MSP430FR2355, MSP430FR2353, MSP430FR2153 and MSP430FR2155
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="xmc">XMC <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-xmc1100-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-04-07, last updated: 2020-01-05">xmc1100-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/xmc1100-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;xmc1100-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;david-sawatzke&#x2F;xmc1100-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-xmc1100-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/xmc1100-hal.svg" />
+    <img src="https://img.shields.io/crates/d/xmc1100-hal.svg" />
+    <img src="https://img.shields.io/crates/l/xmc1100-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/david-sawatzke&#x2F;xmc1100-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware Abstraction Layer (HAL) for the XMC1100 series of ARM Cortex-M+ microcontroller
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-xmc4-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-11-17, last updated: 2019-11-17">xmc4-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/xmc4-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;crate&#x2F;xmc4-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;xmc-rs&#x2F;xmc4-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-xmc4-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/xmc4-hal.svg" />
+    <img src="https://img.shields.io/crates/d/xmc4-hal.svg" />
+    <img src="https://img.shields.io/crates/l/xmc4-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/xmc-rs&#x2F;xmc4-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Peripheral access API for XMC4 series microcontrollers
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="giga">GigaDevice <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="icon fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-gd32vf103xx-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-11-20, last updated: 2020-11-01">gd32vf103xx-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/gd32vf103xx-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;riscv-rust&#x2F;gd32vf103xx-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-gd32vf103xx-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/gd32vf103xx-hal.svg" />
+    <img src="https://img.shields.io/crates/d/gd32vf103xx-hal.svg" />
+    <img src="https://img.shields.io/crates/l/gd32vf103xx-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/riscv-rust&#x2F;gd32vf103xx-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    HAL for GD32VF103 microcontrollers
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-gd32vf103-hal" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-09-09, last updated: 2020-06-16">gd32vf103-hal</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/gd32vf103-hal"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;gd32vf103-hal"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;luojia65&#x2F;gd32vf103-hal"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-gd32vf103-hal"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/gd32vf103-hal.svg" />
+    <img src="https://img.shields.io/crates/d/gd32vf103-hal.svg" />
+    <img src="https://img.shields.io/crates/l/gd32vf103-hal.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/luojia65&#x2F;gd32vf103-hal.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Hardware abstract layer (HAL) for RISC-V microcontroller GD32VF103
+  </p>
+</li>
+
+
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  <div class="alert-box">
+    <h3>Do you know something we don't?</h3>
+    <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a                   href="https:&#x2F;&#x2F;github.com&#x2F;niclashoyer&#x2F;areweembeddedyet/issues/new" target="_blank">Let us know</a>!
+    </p>
+  </div>
+
+</article>
+
+  </main>
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;niclashoyer&#x2F;areweembeddedyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="last-updated">
+      Last updated 09 December 2020 - <a href="https:&#x2F;&#x2F;github.com&#x2F;niclashoyer&#x2F;areweembeddedyet/#license">CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>
